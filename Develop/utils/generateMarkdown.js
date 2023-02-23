@@ -45,11 +45,24 @@ function renderLicenseSection(license) {
   }
 }
 
+function getUser(username) {
+  if (username) {
+    fetch(`https://api.github.com/users/${username}`)
+        .then( response => response.json())
+        .then( response => {return `[Github](${response.html_url})`;})
+        .catch( err => console.error(err));
+  }
+  else {
+    return 'Github N/A';
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
   const licenseSection = renderLicenseSection(data.license);
+  const github = getUser(data.github);
 
   const markdown = `# ${data.title} ${licenseBadge}
 
@@ -81,7 +94,10 @@ function generateMarkdown(data) {
   ${data.test}
   
   ## Questions
-  ${data.questions}`;
+  ${github}
+
+  You can contact me through the following:
+  Email: ${data.email}`;
 
   return markdown;
 }

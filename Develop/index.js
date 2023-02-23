@@ -68,8 +68,13 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide email or Github profile to direct users for questions: ',
-        name: 'questions'
+        message: 'Provide github profile: ',
+        name: 'github'
+    },
+    {
+        type: 'input',
+        message: 'Provide email for contact: ',
+        name: 'email'
     }
 ];
 
