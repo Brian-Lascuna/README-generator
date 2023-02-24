@@ -9,7 +9,7 @@ This script uses the 'inquirer' module and can be installed via the node package
 ## Usage
 After installing inquirer, simply run the script using 'node index.js' and answer the following prompts. Once finished, a README will be generated in the same directory as the script location.
 
-A video demonstration can be viewed [here]().
+A video demonstration can be viewed [here](https://drive.google.com/file/d/1-m6UVwqMBBDrSyUOslS6OHeXBMK3iPdL/view).
 
 ## Credits
 N/A
