@@ -69,7 +69,7 @@ const questions = [
     {
         type: 'input',
         message: 'Provide github profile: ',
-        name: 'github'
+        name: 'githubProf'
     },
     {
         type: 'input',
