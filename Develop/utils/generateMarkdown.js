@@ -84,7 +84,7 @@ function generateMarkdown(data) {
   ${data.test}
   
   ## Questions
-  [Github](https://github.com/${data.github}
+  [Github](https://github.com/${data.githubProf})
 
   You can contact me through the following:
 
