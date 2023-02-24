@@ -78,16 +78,6 @@ const questions = [
     }
 ];
 
-// Calls inquirer to get user inputted data
-function getData() {
-    inquirer
-        .prompt(questions)
-        .then((response) => {
-           let data = generateMarkdown(response);
-           writeToFile(fileName, data);
-        })
-}
-
 // Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function(err) {
@@ -100,7 +90,12 @@ function writeToFile(fileName, data) {
 
 // Create a function to initialize app
 function init() {
-    getData();
+    inquirer
+        .prompt(questions)
+        .then((response) => {
+           let data = generateMarkdown(response);
+           writeToFile(fileName, data);
+        })
 }
 
 // Function call to initialize app
