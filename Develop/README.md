@@ -1,7 +1,7 @@
 # README-test [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  Learning more about node.js I built this project to practice and apply what I learned about node.js and to make a README with ease. Saving time when making a README. I learned about many concepts in node.js such as the different modules and reading and writing files.
+  user motivation. user description. user's solution. user's learning process.
   
   ## Table of Contents
   [Installation](#installation)
@@ -13,10 +13,10 @@
   [License](#license)
   
   ## Installation
-  This project uses inquirer which can be installed via the node package manager. Use 'npm install' or 'npm i inquirer@8.2.4'.
+  install instructions.
   
   ## Usage
-  After installing inquirer, run the script using 'node index.js' and answer the following prompts.
+  usage instructions.
   
   ## Credits
   N/A
@@ -25,10 +25,10 @@
   [MIT License](https://opensource.org/licenses/MIT)
   
   ## How to Contribute
-  The code is open-sourced and can be easily edited.
+  contributions.
   
   ## Tests
-  'node index.js'
+  test commands.
   
   ## Questions
   [Github](https://github.com/brian-lascuna)
